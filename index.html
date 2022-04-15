@@ -69,7 +69,7 @@
             <p><b style="color:red">Attention:</b> The form opens your email application with the data you entered. <b>To complete the order you have to attach your 3d-printing file and send the email! </b></p>
                 </br>
                 <form class="needs-validation"
-                    id="need-validation">
+                    id="need-validation" method="post" action="mailto:h3dp@gmail.com?subject=3D-Print Order">
 
                     <div class="container" style="color: rgb(110, 108, 108);">
                         <div class="row">
@@ -152,7 +152,7 @@
                         </div>
                         </br>
                         <div class="form-actions">
-                            <button onclick="sendMail()" type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </form>
