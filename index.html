@@ -236,6 +236,7 @@
                 
                 <div class="row pt-4">
                     <div class="col-sm-12">
+                        <h3>Example 3D Models</h3>
                         <table class="table">
                             <thead>
                               <tr>
@@ -281,14 +282,13 @@
                     <h4>Where to find us</h4>
                     <dl>
                         <dd>Hawassa University Main Campus</dd>
-                        <dd>Building TODO</dd>
                     </dl>
                 </div>
                 <div class="col-sm-4">
                     <h4>How to reach us</h4>
                     <dl>
-                        <dd>E-Mail: TODO@todo.com</dd>
-                        <dd>Phone +251TODO</dd>
+                        <dd>E-Mail: hawassa3dp@gmail.com</dd>
+                        <dd>Phone +251</dd>
                     </dl>
                 </div>
                 <div class="col-sm-2"></div>
@@ -296,8 +296,6 @@
         </div>
 
     </main>
-
-    <embed type="video/webm" src="/files/videos/3dprint on solidwork.mp4" autostart="false" height="600" width="800" />
 
 
     <!-- Footer -->
@@ -335,8 +333,6 @@
             console.log()
 
             if (form.checkValidity() === false) {
-                //event.preventDefault();
-                //event.stopPropagation();
                 form.classList.add('was-validated');
             } else {
                 var firstName = document.getElementById("firstName").value;
@@ -349,7 +345,7 @@
                 var height = document.getElementById("height").value;
                 var thickness = document.getElementById("thickness").value;
 
-                var body = "<b>New Order</b>: \n First Name: " + firstName +
+                var body = "New Order: \n First Name: " + firstName +
                     "\n Last Name: " + lastName + "\n Email: " + email +
                     "\n quality: " + quality + "\n quantity: " + quantity +
                     "\n color: " + color + "\n width: " + width +
