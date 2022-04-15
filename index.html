@@ -68,7 +68,7 @@
             <p><b>Pricing:</b> We charge a general fee of 30 birr per print. Additionally it costs 40 birr per hour it takes to finish your print. <br/> Example: If your print takes two hours, the price is: 30 birr + 80 birr (2 x 40 birr) = 110 birr </p>
             <p><b style="color:red">Attention:</b> The form opens your email application with the data you entered. <b>To complete the order you have to attach your 3d-printing file and send the email! </b></p>
                 </br>
-                <form method="post" enctype="application/x-www-form-urlencoded" class="needs-validation"
+                <form class="needs-validation"
                     id="need-validation">
 
                     <div class="container" style="color: rgb(110, 108, 108);">
@@ -315,7 +315,6 @@
     </footer>
 
     <!-- Scripts-->
-    <script src="/js/sendMail.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -330,7 +329,6 @@
         function sendMail() {
 
             var form = document.getElementById('need-validation');
-            console.log()
 
             if (form.checkValidity() === false) {
                 form.classList.add('was-validated');
@@ -345,13 +343,13 @@
                 var height = document.getElementById("height").value;
                 var thickness = document.getElementById("thickness").value;
 
-                var body = "New Order: \n First Name: " + firstName +
+                /*var body = "New Order: \n First Name: " + firstName +
                     "\n Last Name: " + lastName + "\n Email: " + email +
                     "\n quality: " + quality + "\n quantity: " + quantity +
                     "\n color: " + color + "\n width: " + width +
                     "\n height: " + height + "\n thickness: " + thickness;
                 window.location.href = "mailto:h3dp@gmail.com?subject=3D-Print Order&body=" + encodeURIComponent(
-                    body);
+                    body);*/
             }
 
 
